@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: playzone-service
+server:
+  port: 8300
+  servlet:
+    context-path: /api/playzone
