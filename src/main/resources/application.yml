@@ -1,6 +1,12 @@
 spring:
   application:
     name: playzone-service
+  data:
+   cassandra:
+      keyspaceName: playzone
+      contactPoints: 127.0.0.1
+      port: 9042
+      local-datacenter: DC1
 server:
   port: 8300
   servlet:
