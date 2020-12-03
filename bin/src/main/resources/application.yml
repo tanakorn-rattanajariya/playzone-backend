@@ -1,8 +1,6 @@
 spring:
   application:
     name: playzone-service
-  datasource:
-    url: 
 server:
   port: 8300
   servlet:

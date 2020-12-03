@@ -53,11 +53,6 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-		    <groupId>org.apache.cassandra</groupId>
-		    <artifactId>cassandra-all</artifactId>
-		    <version>3.11.9</version>
-		</dependency>
 	</dependencies>
 
 	<build>
