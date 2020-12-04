@@ -10,6 +10,6 @@ public class AuthenticationController {
 	
 	@RequestMapping(value="/login",method= RequestMethod.POST,consumes = "application/json", produces = "application/json" )
 	public void login(@RequestBody String username,@RequestBody String password) {
-		AuthenticationService.getToken();
+		AuthenticationService.getToken(username,password);
 	}
 }
