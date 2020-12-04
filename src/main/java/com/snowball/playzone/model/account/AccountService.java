@@ -4,7 +4,14 @@ import com.snowball.playzone.model.BaseService;
 
 public class AccountService extends BaseService<AccountRepository> {
 
-	public void  testService() {
-		repository.findAll();
+	public static AccountService instance;
+	public static AccountService getInstance() {
+		if(instance==null)instance = new AccountService();
+		return instance;
+	}
+	
+	
+	public Account findByUsername(String username) {
+		return repository.findByUsername(username);
 	}
 }

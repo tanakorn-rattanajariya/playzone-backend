@@ -9,7 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthenticationController {
 	
 	@RequestMapping(value="/login",method= RequestMethod.POST,consumes = "application/json", produces = "application/json" )
-	public void login(@RequestBody String username,@RequestBody String password) {
-		AuthenticationService.getToken(username,password);
+	public String login(@RequestBody String username,@RequestBody String password) {
+		try {
+			String token =AuthenticationService.getToken(username,password);
+			return token;
+		} catch (Exception e) {
+			return String.valueOf(e);
+		}
 	}
 }

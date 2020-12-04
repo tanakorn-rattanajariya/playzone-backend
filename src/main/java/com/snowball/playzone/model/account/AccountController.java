@@ -5,6 +5,6 @@ import com.snowball.playzone.model.BaseController;
 public class AccountController extends BaseController<AccountService> {
 
 	public void test() {
-		service.testService();
+		service.findByUsername("user");
 	}
 }
