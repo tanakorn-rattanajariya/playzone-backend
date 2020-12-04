@@ -2,9 +2,9 @@ package com.snowball.playzone.model.account;
 
 import org.springframework.data.annotation.Id;
 
-import com.snowball.playzone.model.BaseService;
+import com.snowball.playzone.model.BaseModel;
 
-public class Account extends BaseService{
+public class Account extends BaseModel{
 
 	@Id
 	private Id ID;
